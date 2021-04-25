@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quentin Choumont Resume</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quentin Choumont Resume">
+    <meta name="author" content="Quentin Choumont">
+
+    <!-- JQuery -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/validateEmail.js" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link href="../css/GeneralStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/HeaderStyle.css">
+</head>
+
+<header class="main_h">
+    <div class="module-border-wrap"></div>
+    <nav role="navigation" class="primary-navigation">
+        <ul>
+            <h2><a href='../Index.html'>QC</a></h2>
+            <li><a href='../Index.html'>myHome</a></li>
+            <li><a href='../HTML/Resume.html'>myResume</a></li>
+            <li style="background: #293443; border-radius: 5px"><a href='../HTML/myWork.html'>myWork</a></li>
+            <li><a href='../HTML/myArt.html'>myArt</a></li>
+            <li><a href='https://soundcloud.com/quentin-choumont-255591307'>myMusic</a></li>
+            <li><a href='mailto:qchoumont@gmail.com?Subject=Hi%20Quentin'>emailMe</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+<div class="container-fluid">
+    <div class="px-lg-5">
+        <!-- For demo purpose -->
+        <div class="row py-5">
+            <div class="col-lg-12 mx-auto">
+                <div class="text-white p-5 shadow-sm rounded banner">
+                    <h1 class="display-4">my work</h1>
+                    <p class="lead">programmy things i've done</p>
+
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Work Item -->
+            <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm">
+                    <div class="embed-responsive embed-responsive-4by3"><a href="http://github.com/qwentin355"><img  class="embed-responsive-item" src='../Images/github_logo.png' title="Quenitn Choumont GitHub"></a></div>
+                    <div class="p-4">
+                        <h5> <a href="#" class="text-dark">myGitHub</a></h5>
+                        <p class="small text-muted mb-0">This is where I do some programming stuff, some of my in class code is here, I regretfully dont have all of it, oh the memories i've lost</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Item -->
+            <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm">
+                    <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src='http://github.com/qwentin355' title="Quenitn Choumont GitHub"></iframe></div>
+                    <div class="p-4">
+                        <h5> <a href="#" class="text-dark">myGitHub</a></h5>
+                        <p class="small text-muted mb-0">GitHub doesn't like it when we embed there content, this will probably be changed to a logo and a link</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div id="contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4><strong>Quentin Choumont</strong>
+                </h4>
+
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:qchoumont@gmail.com">qchoumont@gmail.com</a></li>
+                    <li><i class="fa fa-mobile fa-fw"></i> <a href="tel:306-961-1930">306-961-1930</a></li>
+
+                    <form id = "emailForm" action="mailto:qchoumont@gmail.com">
+                        <div class="form-group">
+                            <label for="emailAddress">Email address</label>
+                            <input type="text" class="form-control" id="emailAddress" name ="emailAddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="topicSelect">Services</label>
+                            <select class="form-control" id="topicSelect">
+                                <option>Desktop</option>
+                                <option>Web</option>
+                                <option>Mobile</option>
+                                <option>Database</option>
+                                <option>3D Art</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="taMessage">Message</label>
+                            <textarea class="form-control" datatype="text" name="taMessage" id="taMessage" rows="3"></textarea>
+                        </div>
+                        <input type="submit" value="Send" />
+                    </form>
+                </ul>
+
+                <br>
+                <ul class="list-inline">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/quentin-choumont-a177a9138/"><i class="fab fa-linkedin-in fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/QChoumont"><i class="fab fa-twitter fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCVz0CgDRyZnOEEP72-6LidA?view_as=subscriber"><i class="fab fa-youtube fa-fw fa-3x"></i></a>
+                    </li>
+                </ul>
+                <hr>
+                <a href="../HTML/DeveloperPage.html">Developed by: Quentin Choumont, 2021-03-23</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,110 @@
+/*GENERAL LAYOUT*/
+html {
+    background: #2c343f;
+}
+body {
+    background: transparent;
+}
+.spacer {
+    background: transparent;
+}
+
+/*Navigation Bar*/
+
+body {
+    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+    color: #ddd;
+    text-rendering: optimizeLegibility;
+}
+
+.banner {
+    background: #761fe7;
+    background: -webkit-linear-gradient(to right, #545bea, #6d55f5, #f88f85);
+    background: linear-gradient(to right, #5463ea, #a78bf3, #eea095);
+}
+
+/*NAVCON BOTTOM*/
+ul.list-inline li {
+    display: inline;
+}
+
+footer {
+    color: white;
+}
+
+/*ERROR HANDLING*/
+label.error {
+    clear: none;
+    float: left;
+    color: red;
+    padding-left: .5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+input.error {
+    background-color: tomato;
+}
+
+textarea.error {
+    background-color: tomato;
+}
+.banner h1 {
+    color: rgba(55, 11, 37, 0.6);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    border-bottom: 2px rgba(55, 11, 37, 0.6) dashed;
+}
+/* Position child elements relative to this element */
+.aspect-ratio-box {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Create a pseudo element that uses padding-bottom to take up space */
+.aspect-ratio-box::after {
+    display: block;
+    content: "";
+    /* 16:9 aspect ratio */
+    padding-bottom: 90%;
+}
+
+/* Image is positioned absolutely relative to the parent element */
+.aspect-ratio-box img {
+    /* Image should match parent box size */
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+}
+.pt-50{
+    top:-50%;
+}
+.pt-60{
+    top:-60%;
+}
+.pl-50{
+    left:-50%;
+}
+
+/*.aspect-ratio-box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.aspect-ratio-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}*/
+
+/*MOBILE LAYOUT*/
+@media only screen and (max-width: 850px) {
+
+    .py-5{
+        padding-top: 0!important;
+    }
+}
+

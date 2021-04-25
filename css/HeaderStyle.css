@@ -1,0 +1,156 @@
+.main_h
+{
+    background: #18191b;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position:fixed;
+    z-index: 9999;
+    top:0;
+}
+
+.main_h ul li {
+    list-style: none;
+    margin: 0 auto;
+    border-left: 2px solid #5463ea;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+.main_h ul h2 {
+    border: 2px solid #5463ea;
+    align-self: center;
+    margin: -15px auto;
+    display: block;
+    padding: 0px 30px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.main_h ul h2 a {
+    color: white;
+}
+.main_h li a {
+    color: white;
+}
+
+.main_h li a:hover {
+    color: #5463ea;
+}
+
+.main_h li:hover {
+    cursor: pointer;
+}
+
+.main_h ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: white;
+}
+
+.main_h ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.main_h ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.main_h ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid #5463ea;
+    transition: all 0.3s ease;
+}
+
+.main_h a:hover {
+     color: #5463ea;
+ }
+
+ul li ul li a { transition: all 0.5s ease; }
+
+@media only screen and (min-width: 851px) {
+    .module-border-wrap {
+
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(to left, #5463ea, #a78bf3, #eea095);
+        padding: 3px;
+        display: block;
+        z-index: 9998;
+        height: 62px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+    .primary-navigation {
+        margin: 0 auto;
+        display: block;
+        padding: 20px 0 0 0;
+        text-align: center;
+        font-size: 16px;
+        background: #18191b;
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+        top: 0px;
+    }
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 850px) {
+    .module-border-wrap {
+
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(to left, #5463ea, #a78bf3, #eea095);
+        padding: 3px;
+        display: block;
+        z-index: 9998;
+        height: 42px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+    .primary-navigation {
+        background: #18191b;
+        margin: 0 auto;
+        display: block;
+        padding: 0px 0 0 0;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+        bottom: 0px;
+        height: 40px;
+
+    }
+    .main_h ul li {
+        padding: 0 5px;
+        font-size: .6rem;
+    }
+    .main_h ul h2 {
+        display: none;
+    }
+    .main_h ul h2 a {
+        display: none;
+    }
+}
+

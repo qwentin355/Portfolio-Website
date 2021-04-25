@@ -1,0 +1,8 @@
+{
+  "name": "untitled",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemailer": "^6.4.8"
+  }
+}

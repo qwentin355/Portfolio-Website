@@ -1,0 +1,72 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* About */
+.about {
+    padding: 50px 0;
+}
+.about {
+    padding-top: 30px; }
+.about p {
+    color: white;
+    font-size: 26px; }
+.about h1 {
+    color: white;
+    font-size: 46px; }
+
+/* Services */
+#services {
+    background-color: #545BEA;
+    padding: 50px 0;
+}
+
+.service-item {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 5px 0;
+}
+
+/*NON MOBILE*/
+@media only screen and (min-width: 851px) {
+    .carousel-item {
+        min-height: 80vh;
+        background: no-repeat center center scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -20px;
+    }
+}
+/*MOBILE*/
+@media only screen and (max-width: 850px) {
+    .carousel-item {
+        min-height: 80vh;
+        background: no-repeat center center scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -20px;
+    }
+   .TLDR_T.text-left {
+        text-align: center !important;
+    }
+
+   .mobile-off {
+       display: none !important;
+   }
+
+}
+
+
